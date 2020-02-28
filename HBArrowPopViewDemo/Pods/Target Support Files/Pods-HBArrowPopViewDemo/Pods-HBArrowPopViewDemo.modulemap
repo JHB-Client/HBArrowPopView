@@ -1,0 +1,6 @@
+framework module Pods_HBArrowPopViewDemo {
+  umbrella header "Pods-HBArrowPopViewDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
