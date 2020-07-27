@@ -31,12 +31,14 @@ typedef NS_ENUM(NSInteger, HBPopviewArrowDirection){
 @interface HBArrowPopview : UIView
 @property (nonatomic, assign) CGFloat arrowWidth;
 @property (nonatomic, assign) CGFloat arrowHeight;
+@property (nonatomic, assign) CGFloat arrowOffSet;
 @property (nonatomic, assign) CGFloat containerViewRadius;
 @property (nonatomic, assign) CGFloat bgAlpha;
 @property (nonatomic, strong) UIColor *containerViewBgColor;
 @property (nonatomic, strong) UIView *contentView;
 //
 - (instancetype)initWithArrowPeakPoint:(CGPoint)peakPoint containerViewSize:(CGSize)containerViewSize arrowDirection:(HBPopviewArrowDirection)arrowDirection;
+- (instancetype)initWithTargetView:(UIView *)targetView containerViewSize:(CGSize)containerViewSize;
 - (void)showArrowPopView;
 @end
 
